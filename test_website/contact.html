@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>3 Column Layout</title>
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="header"><p>
+    <img class="logo" src="assets/img/logo.png" alt=""/>
+</p></header>
+<div class="container">
+    <main class="center column">
+        <article>
+            <h1>Contact</h1>
+            <table>
+            <tr>
+                <td width="600" valign="top">
+            <h1>User Details</h1>
+            <form>
+                <label for="FullName">Full Name:</label><br>
+                <input type="text" id="FullName"><br>
+                <label for="YBirth">Your Birthday:</label><br>
+                <input type="date" id="YBirth"><br>
+                <label for="male">Gender:</label><br>
+                <input id="male" list="gender">
+                <datalist id="gender">
+                    <option value="Male">
+                    <option value="Female">
+                </datalist><br>
+                <label for="CountryL">Country:</label><br>
+                <input list="Country" id="CountryL"><br>
+                <datalist id="Country">
+                    <option value="Ukraine">
+                    <option value="USA">
+                    <option value="Europe">
+                </datalist>
+                <label for="Phone">Phone Number:</label><br>
+                <input type="text" id="Phone" value="+380"><br>
+                <label for="Bio">Bio:</label><br>
+                <input type="textarea" id="Bio"><br>
+                <button>Submit</button>
+            </form>
+                </td>
+                <td valign="top">
+                    <h1>Account Details</h1>
+                    <form>
+                        <label for="Username">Username:</label><br>
+                        <input type="text" id="Username"><br>
+                        <label for="Em">Email:</label><br>
+                        <input type="text" id="Em"><br>
+                        <label for="ps1">Password:</label><br>
+                        <input type="password" id="ps1"><br>
+                        <label for="ps2">Confirm Password:</label><br>
+                        <input type="password" id="ps2"><br>
+                        <input type="checkbox">I accepted terms and conditions<br>
+                        <button>Submit</button>
+                    </form>
+                </td>
+            </tr>
+            </table>
+        </article>
+    </main>
+    <nav class="left column">
+        <h3>Left heading</h3>
+        <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+        <h3>Left heading</h3>
+        <ul>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="slider.html">Slider</a></li>
+        </ul>
+    </nav>
+    <div class="right column">
+        <h3>Right heading</h3>
+        <p></p>
+    </div>
+</div>
+<div class="footer-wrapper">
+    <footer class="footer"><p>
+        <img class="logo" src="assets/img/logo.png" alt=""/>
+    </p></footer>
+</div>
+</body>
+</html>
