@@ -5,6 +5,8 @@
     <title>3 Column Layout</title>
     <link href="assets/css/layout.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/slide.css" rel="stylesheet">
+
 </head>
 <body>
 <header class="header"><p>
@@ -12,10 +14,11 @@
 </p></header>
 <div class="container">
     <main class="center column">
-        <article>
-            <h1>Slider</h1>
-            <p></p>
-        </article>
+        <h1 align="center">Slider</h1>
+        <div id="mySlider"></div>
+        <button class="button" id="sliderPrev" onclick="prevSlide()">Prev</button>
+        <button class="button" id="sliderNext" onclick="nextSlide()">Next</button>
+        <p></p>
     </main>
     <nav class="left column">
         <h3>Left heading</h3>
@@ -40,5 +43,6 @@
         <img alt="" class="logo" src="assets/img/logo.png"/>
     </p></footer>
 </div>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
